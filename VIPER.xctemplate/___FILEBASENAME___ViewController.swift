@@ -1,13 +1,13 @@
 import UIKit
 
 final class ___VARIABLE_productName___ViewController: UIViewController {
+    var viewHandler: ___VARIABLE_productName___ViewHandlerProtocol?
+    var presenter: (___VARIABLE_productName___PresenterProtocol & ___VARIABLE_productName___Provider)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         presenter?.viewDidLoad()
-        
-        //setupConstraints()
     }
 
     override func loadView() {
@@ -15,10 +15,6 @@ final class ___VARIABLE_productName___ViewController: UIViewController {
 
         viewHandler?.loadView()
     }
-
-    
-    var viewHandler: ___VARIABLE_productName___ViewHandlerProtocol?
-    var presenter: (___VARIABLE_productName___PresenterProtocol & ___VARIABLE_productName___Provider)?
 }
 
 //MARK: - ___VARIABLE_productName___View
